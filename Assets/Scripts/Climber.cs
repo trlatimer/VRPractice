@@ -33,6 +33,6 @@ public class Climber : MonoBehaviour
     {
         InputDevices.GetDeviceAtXRNode(climbingHand.controllerNode).TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 velocity);
 
-        character.Move(transform.rotation * 0-velocity * Time.fixedDeltaTime);
+        character.Move(transform.rotation * -velocity * Time.fixedDeltaTime);
     }
 }
