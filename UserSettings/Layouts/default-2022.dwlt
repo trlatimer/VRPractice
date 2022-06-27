@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1360
     height: 677
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 43
+  controlID: 106
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -842,10 +842,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 57}
-    m_SelectedIDs: cc6e0000
-    m_LastClickedID: 28364
-    m_ExpandedIDs: 00000000cc6e00006070000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 3a6f0000
+    m_LastClickedID: 28474
+    m_ExpandedIDs: 000000003a6f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -873,7 +873,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc6e0000
+    m_ExpandedIDs: 000000003a6f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000e7000001270000016700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1003,9 +1003,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b26c0000
-      m_LastClickedID: 27826
-      m_ExpandedIDs: 3ea9feff1cccfeffb453ffff2cfbffff1c6c0000b26c0000
+      m_SelectedIDs: de700000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1288,9 +1288,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9261386, y: 1.2410877, z: -0.5508665}
+    m_Target: {x: -0.0881191, y: 1.7135327, z: -1.6534909}
     speed: 2
-    m_Value: {x: 1.9261386, y: 1.2410877, z: -0.5508665}
+    m_Value: {x: -0.0881191, y: 1.7135327, z: -1.6534909}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1336,13 +1336,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.26123387, y: -0.008110896, z: 0.0021950738, w: -0.9652398}
+    m_Target: {x: -0.14362668, y: -0.049857356, z: 0.0072452817, w: -0.98834926}
     speed: 2
-    m_Value: {x: -0.26123366, y: -0.008110889, z: 0.002195072, w: -0.965239}
+    m_Value: {x: -0.14510895, y: -0.049846403, z: 0.0073200557, w: -0.9881321}
   m_Size:
-    m_Target: 0.8387008
+    m_Target: 0.87112874
     speed: 2
-    m_Value: 0.8387008
+    m_Value: 0.91217667
   m_Ortho:
     m_Target: 0
     speed: 2
