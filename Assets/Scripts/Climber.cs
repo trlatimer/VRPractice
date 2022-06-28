@@ -7,13 +7,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Climber : MonoBehaviour
 {
     private CharacterController character;
-    public static XRController climbingHand;
-    private ContinuousMovement continuousMovement;
+    public static XRDirectInteractor climbingHand;
+    //private ContinuousMovement continuousMovement;
+    private ActionBasedContinuousMoveProvider continuousMovement;
 
     void Start()
     {
         character = GetComponent<CharacterController>();
-        continuousMovement = GetComponent<ContinuousMovement>();
+        continuousMovement = GetComponent<ActionBasedContinuousMoveProvider>();
     }
 
     void FixedUpdate()
@@ -31,7 +32,8 @@ public class Climber : MonoBehaviour
 
     void Climb()
     {
-        InputDevices.GetDeviceAtXRNode(climbingHand.controllerNode).TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 velocity);
+        //InputDevices.GetDeviceAtXRNode(climbingHand).TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 velocity);
+        Vector3 velocity = climbingHand.gameObject.GetComponent<ActionBasedController>().positionAction.action.ReadValue<Vector2>();
 
         character.Move(transform.rotation * -velocity * Time.fixedDeltaTime);
     }
