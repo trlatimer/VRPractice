@@ -730,6 +730,7 @@ GameObject:
   - component: {fileID: 115366992}
   - component: {fileID: 115366991}
   - component: {fileID: 115366990}
+  - component: {fileID: 115366993}
   m_Layer: 7
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -1046,6 +1047,31 @@ MonoBehaviour:
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &115366993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115366988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33678bc2d39d7c4468502950b0f8c15c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Velocity Property
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c7f1932d-d7f6-4f80-9949-c43f9c40f307
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6408176299712663493, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1 &118036281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,7 +1734,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -2465,7 +2491,7 @@ GameObject:
   - component: {fileID: 415191821}
   - component: {fileID: 415191820}
   - component: {fileID: 415191830}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: XR Origin (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2707,6 +2733,7 @@ GameObject:
   - component: {fileID: 434075990}
   - component: {fileID: 434075992}
   - component: {fileID: 434075991}
+  - component: {fileID: 434075993}
   m_Layer: 7
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -3023,6 +3050,31 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
+--- !u!114 &434075993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434075985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33678bc2d39d7c4468502950b0f8c15c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityProperty:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Velocity Property
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: aab87ee2-285d-4cc8-9017-77260554a547
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6845617366794828043, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!135 &460252698
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3374,7 +3426,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -3990,7 +4042,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -4052,7 +4104,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -5979,6 +6031,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Hand Presence (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4398128455628141694, guid: 3c6d5cff917db134cbe6614bf6f95246,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c6d5cff917db134cbe6614bf6f95246, type: 3}
@@ -7090,17 +7147,17 @@ PrefabInstance:
     - target: {fileID: 81246634493295029, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 361526544398548814, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 830539812217240393, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1526883724338834430, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
@@ -7160,7 +7217,7 @@ PrefabInstance:
     - target: {fileID: 2215365213315263972, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2512596353645819399, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
@@ -7170,52 +7227,52 @@ PrefabInstance:
     - target: {fileID: 2818260801598992610, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3799976053057882350, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5006001753339560685, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5436660334435353760, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6271191666150478626, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6765239864744769596, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6861065750202248319, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7929909178309808189, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8616637902242264510, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9072364688253221908, guid: 35913c390fba52c4a99bd37f52506a6b,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -7894,7 +7951,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -8863,7 +8920,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -11453,7 +11510,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -13544,7 +13601,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -13606,7 +13663,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -14835,7 +14892,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -15119,6 +15176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Left Hand Presence (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398128455628141694, guid: 9f31758da7e2caa428ea03d6278b6632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
